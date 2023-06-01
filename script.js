@@ -70,7 +70,7 @@ onConvertClick = () => {
     if (defaultValue) {
         convertResult = arabicToRoman(+inputNum.value);
     } else {
-        convertResult = romanToArabic(inputNum.value);
+        convertResult = romanToArabic(inputNum.value.toUpperCase());
     }
     resultText.innerHTML = convertResult;
 }
